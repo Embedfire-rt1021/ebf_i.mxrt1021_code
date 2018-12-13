@@ -1,0 +1,332 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: z Microsoft, Microsoft, LIC=EXJFW-QU708-U4KS7-EU0FZ-ADNAN-64KA6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      CMSIS_AGDI.dll V1.30.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\NXP\RT1021\RT1021_´¥Ãþ»­°å\project\mdk\YH-RT1021.uvprojx
+Project File Date:  10/22/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'itcm_txt_ram_debug'
+compiling system_MIMXRT1021.c...
+compiling fsl_common.c...
+compiling fsl_gpio.c...
+compiling fsl_clock.c...
+compiling fsl_dmamux.c...
+compiling fsl_lpuart.c...
+compiling fsl_edma.c...
+compiling fsl_semc.c...
+compiling fsl_sbrk.c...
+compiling fsl_assert.c...
+compiling fsl_notifier.c...
+compiling fsl_str.c...
+compiling fsl_shell.c...
+compiling fsl_lpi2c.c...
+compiling fsl_debug_console.c...
+compiling fsl_log.c...
+compiling fsl_io.c...
+compiling fire_imxrt1021_sdram_ini_dcd.c...
+compiling clock_config.c...
+compiling board.c...
+compiling core_delay.c...
+compiling pin_mux.c...
+compiling bsp_led.c...
+compiling fire_imxrt1021_spiflash_config.c...
+compiling fsl_flexspi_nor_boot.c...
+compiling main.c...
+..\..\user\main.c(42): warning:  #177-D: variable "fps"  was declared but never referenced
+  		double fps;
+..\..\user\main.c(43): warning:  #550-D: variable "width"  was set but never used
+  		uint16_t width, height;
+..\..\user\main.c(43): warning:  #550-D: variable "height"  was set but never used
+  		uint16_t width, height;
+..\..\user\main.c(44): warning:  #550-D: variable "pic"  was set but never used
+  		uint16_t * pic;
+..\..\user\main.c: 4 warnings, 0 errors
+compiling semc_8080_lcd.c...
+compiling bsp_ili9341_lcd.c...
+..\..\user\bsp\lcd\bsp_ili9341_lcd.c(67): warning:  #177-D: function "ILI9341_ConfigReg"  was declared but never referenced
+  static void ILI9341_ConfigReg(void)
+..\..\user\bsp\lcd\bsp_ili9341_lcd.c: 1 warning, 0 errors
+compiling fonts.c...
+compiling bsp_xpt2046_lcd.c...
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c(624): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		strXPT2046_TouchPara[LCD_Mode].dX_X = ( CalibrationFactor.An * 1.0 ) / CalibrationFactor.Divider;
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c(625): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		strXPT2046_TouchPara[LCD_Mode].dX_Y = ( CalibrationFactor.Bn * 1.0 ) / CalibrationFactor.Divider;
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c(626): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		strXPT2046_TouchPara[LCD_Mode].dX   = ( CalibrationFactor.Cn * 1.0 ) / CalibrationFactor.Divider;
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c(628): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		strXPT2046_TouchPara[LCD_Mode].dY_X = ( CalibrationFactor.Dn * 1.0 ) / CalibrationFactor.Divider;
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c(629): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		strXPT2046_TouchPara[LCD_Mode].dY_Y = ( CalibrationFactor.En * 1.0 ) / CalibrationFactor.Divider;
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c(630): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		strXPT2046_TouchPara[LCD_Mode].dY   = ( CalibrationFactor.Fn * 1.0 ) / CalibrationFactor.Divider;
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c(82): warning:  #177-D: function "XPT2046_ModeInit"  was declared but never referenced
+  static void XPT2046_ModeInit(void);
+..\..\user\bsp\touch\bsp_xpt2046_lcd.c: 7 warnings, 0 errors
+compiling bsp_i2c_eeprom.c...
+compiling palette.c...
+compiling GB2312_H1616.c...
+compiling eeprom_test.c...
+linking...
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching gb2312_h1616.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fonts.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching pin_mux.o(i.BOARD_InitPins).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_Touch_Calibrate).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Draw_Shape_Button).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Touch_Button_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf6.o(i._printf_core).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_REG_Config).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching clock_config.o(i.BOARD_BootClockRUN).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_str.o(i.StrFormatPrintf).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.main).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_Calculate_CalibrationFactor).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching startup_mimxrt1021.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching board.o(i.BOARD_ConfigMPU).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Draw_Trail).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterTransferBlocking).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_GetPllFreq).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.LCD_DrawUniLineCircle).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_GetFreq).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_ReadAdc_Smooth_XY).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching system_mimxrt1021.o(i.SystemCoreClockUpdate).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterInit).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_DrawCircle).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterSetBaudRate).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.EDMA_CreateHandle).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Draw_Clear_Button).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART_ReadBlocking).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.EDMA_HandleIRQ).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching semc_8080_lcd.o(i.ConfigDma).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_Get_TouchedPoint).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_EEPROM_Buffer_Write).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching system_mimxrt1021.o(i.SystemInit).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_io.o(i.IO_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_GetPeriphClkFreq).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_GramScan).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Touch_Button_Down).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_DispString_EN_CH).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_GetCyclesForWidth).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_TouchDetect).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching clock_config.o(i.CLOCK_SetDiv).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching clock_config.o(i.CLOCK_SetMux).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.CLOCK_SetMux).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_str.o(i.ConvertRadixNumToString).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterReceive).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching board.o(i.SCB_DisableDCache).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_DrawLine).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_EEPROM_Page_Write).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching system_mimxrt1021.o(i.SCB_EnableDCache).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.EDMA_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching board.o(i.SCB_EnableDCache).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.EDMA_GetChannelStatusFlags).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_DispChar_EN).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterCheckAndClearError).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_TouchEvenHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Touch_Button_Up).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.Calibrate_or_Get_TouchParaWithFlash).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_IOMUXC_PAD_Config).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_gpio.o(i.GPIO_PinSetInterruptConfig).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_debug_console.o(i.DbgConsole_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_DrawRectangle).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART_GetInstance).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_dmamux.o(i.DMAMUX_GetInstance).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_DispChar_CH).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Draw_Color_Button).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_IOMUXC_MUX_Config).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching system_mimxrt1021.o(i.SCB_EnableICache).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_gpio.o(i.GPIO_GetInstance).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.EDMA_GetInstance).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching board.o(i.SCB_EnableICache).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_gpio.o(i.CLOCK_EnableClock).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching board.o(i.BOARD_DebugConsoleSrcFreq).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching pin_mux.o(i.CLOCK_EnableClock).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_InitEnetPll).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterSend).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.CLOCK_ControlGate).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_dmamux.o(i.CLOCK_ControlGate).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.CLOCK_ControlGate).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.CLOCK_ControlGate).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_WriteCMD).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.CLOCK_SetDiv).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_GetSysPfdFreq).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_GetUsb1PfdFreq).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART_GetDefaultConfig).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Palette_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART_WriteBlocking).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_DispStringLine_EN).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_EEPROM_WaitStandbyState).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_gpio.o(i.GPIO_PinWrite).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching uldiv.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_gpio.o(i.GPIO_PinInit).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_OpenWindow).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_InitSysPll).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_InitUsb1Pll).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART_ClearStatusFlags).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.EDMA_GetDefaultConfig).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_GetInstance).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching core_delay.o(i.CPU_TS_Tmr_Delay_US).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_ReadCMD).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_EEPROM_BufferRead).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.EDMA_SetCallback).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_CommonIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_log.o(i.LOG_Push).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.GPIO_ReadPadStatus).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.EEPROM_I2C_ModeInit).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterStop).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterStart).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fonts.o(i.GetGBKCode_from_EXFlash).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_assert.o(i.__aeabi_assert).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_io.o(i.IO_Transfer).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_TouchDown).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_debug_console.o(i.DbgConsole_Printf).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_EEPROM_IOMUXC_PAD_Config).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_Timeout_Callback).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching memmovea.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_debug_console.o(i.DbgConsole_RelocateLog).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_InitSysPfd).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_EEPROM_IOMUXC_MUX_Config).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterWaitForTxReady).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_InitUsb1Pfd).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA0_DMA16_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA10_DMA26_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA11_DMA27_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA12_DMA28_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA13_DMA29_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA14_DMA30_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA15_DMA31_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA1_DMA17_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA2_DMA18_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA3_DMA19_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA4_DMA20_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA5_DMA21_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA6_DMA22_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA7_DMA23_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA8_DMA24_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.DMA9_DMA25_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_SetPointPixel).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching semc_8080_lcd.o(i.ConfigSemcDbi).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Command_Clear_Palette).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterGetDefaultConfig).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf6.o(i._printf_pre_padding).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_Clear).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_Rst).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.ILI9341_DrawCross).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Command_Select_Color).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching uidiv.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching core_delay.o(i.CPU_TS_TmrInit).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf6.o(i.__0sprintf$6).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_ReadAdc_XY).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_TouchUp).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_gpio.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_log.o(i.LOG_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_BackLed_Control).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf6.o(i._printf_post_padding).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_CheckForBusyBus).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_log.o(i.LOG_Pop).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(i.CLOCK_GetOscFreq).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_dmamux.o(i.DMAMUX_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching board.o(i.CLOCK_GetDiv).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_Delay).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_FillColor).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching palette.o(i.Command_Select_Brush).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching llushr.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_DelayUS).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching llshl.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART1_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART2_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART3_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART4_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART5_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART6_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART7_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART8_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_edma.o(i.Get_StartInstance).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching board.o(i.BOARD_InitDebugConsole).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching clock_config.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching pin_mux.o(i.IOMUXC_SetPinMux).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.IOMUXC_SetPinMux).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.IOMUXC_SetPinMux).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterGetFifoCounts).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching semc_8080_lcd.o(i.EDMA_Callback).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_SetCursor).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.LCD_SetColors).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.I2C_EEPROM_Init).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_clock.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpuart.o(i.LPUART_GetStatusFlags).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C1_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C2_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C3_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C4_DriverIRQHandler).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.XPT2046_ReadAdc).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.CLOCK_EnableClock).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching strlen.o(.text).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching pin_mux.o(i.IOMUXC_SetPinConfig).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching core_delay.o(i.CPU_TS_TmrRd).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_Write_Cmd).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.LCD_GetFont).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.LCD_SetBackColor).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.LCD_SetFont).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.LCD_SetTextColor).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_xpt2046_lcd.o(i.IOMUXC_SetPinConfig).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.IOMUXC_SetPinConfig).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterEnable).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterReset).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf6.o(i._sputc).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(i.ILI9341_Write_Data).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_dmamux.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterGetStatusFlags).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching fsl_lpi2c.o(i.LPI2C_MasterClearStatusFlags).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_i2c_eeprom.o(i.LPI2C_MasterClearStatusFlags).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching bsp_ili9341_lcd.o(.constdata).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6406E: No space in execution regions with .ANY selector matching system_mimxrt1021.o(i.SystemInitHook).
+.\ictm_txt_ram\Objects\YH-RT1021.axf: Error: L6407E: Sections of aggregate size 0x4ac3c bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 219 error messages.
+".\ictm_txt_ram\Objects\YH-RT1021.axf" - 219 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NXP
+                http://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MIMXRT1021_DFP.10.0.0.pack
+                NXP.MIMXRT1021_DFP.10.0.0
+                Device Family Pack for MIMXRT1021
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_itcm_txt_ram_debug
+  C:\Keil_v5\ARM\PACK\NXP\MIMXRT1021_DFP\10.0.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
